@@ -20,9 +20,12 @@ class MainPage extends React.Component<Props, State> {
   render() {
     return (
       <div className="container">
-        <SearchBar/>
-        Start your web application with React in TypeScript.
-        <Counter/>
+        <header className="my-3">
+          <SearchBar/>
+        </header>
+        <section>
+          will show users
+        </section>
       </div>
     );
   }

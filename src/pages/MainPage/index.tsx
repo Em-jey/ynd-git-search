@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Counter from 'components/Counter';
+import SearchBar from 'components/SearchBar';
 
 const select = (state: any) => ({});
 const mapActions = {};
@@ -18,7 +19,8 @@ class MainPage extends React.Component<Props, State> {
 
   render() {
     return (
-      <div className="p-3">
+      <div className="container">
+        <SearchBar/>
         Start your web application with React in TypeScript.
         <Counter/>
       </div>

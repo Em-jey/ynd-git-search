@@ -5,9 +5,10 @@
 	margin: 0;
 }
 
-body {
+body, #root {
 	background-color: #1b1b1b;
 	color: #fff;
+	min-height: 100vh;
 
 	.pointer {
 		cursor: pointer;

@@ -50,13 +50,14 @@ const SearchBar: React.FC<Props> = (props) => {
   return (
     <form onSubmit={handleSearch}>
       <div className="row">
-        <div className="col-xl-6 form-group">
+        <div className="col-lg-6 form-group">
           <input
             className={`form-control${ !searchValid ? ' is-invalid' : '' }`}
             type="text"
             value={searchValue}
             onChange={(e) => setSearchValue(e.target.value)}
             required
+            placeholder="Enter username"
           />
           <div className="invalid-feedback">
             Please enter username.

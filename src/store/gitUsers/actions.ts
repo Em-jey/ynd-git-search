@@ -13,7 +13,6 @@ export const searchUsers = (userName: string) => (dispach: Dispatch) => {
   };
   ApiService.get('/search/users', params)
     .then((res) => {
-      console.log('res: ', res);
       const users: GitUser[] = res.items.map((user: SimpleDict) => ({
         id: user.id,
         login: user.login,

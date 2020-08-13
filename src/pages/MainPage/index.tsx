@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Counter from 'components/Counter';
 import SearchBar from 'components/SearchBar';
+import GitUsers from 'components/GitUsers';
 
 const select = (state: any) => ({});
 const mapActions = {};
@@ -24,7 +24,7 @@ class MainPage extends React.Component<Props, State> {
           <SearchBar/>
         </header>
         <section>
-          will show users
+          <GitUsers/>
         </section>
       </div>
     );

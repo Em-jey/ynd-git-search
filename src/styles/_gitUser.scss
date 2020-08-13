@@ -1,0 +1,16 @@
+.git-user-box {
+  border-radius: 5px;
+  background: #f2f0e9;
+  color: #03032e;
+
+  .user-avatar {
+    border-radius: 50%;
+    border: 2px solid #000;
+    width: 30px;
+    height: 30px;
+  }
+
+  .user-login {
+    flex: 1;
+  }
+}

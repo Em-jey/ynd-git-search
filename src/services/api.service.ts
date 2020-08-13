@@ -14,16 +14,16 @@ class ApiServiceClass {
   }
 
   async handleResponse(response: any) {
-    // try {
-    //   if (!response.ok) {
-    //     const error = response.data;
-    //     throw new Error(error.message);
-    //   }
-    const json = response.data;
-    return json;
-    // } catch(error) {
-    //   throw new Error(error);
-    // }
+    try {
+      if (response.status !== 200) {
+        const error = response.data;
+        throw new Error(error.message);
+      }
+      const json = response.data;
+      return json;
+    } catch(error) {
+      throw new Error(error);
+    }
   }
 
   async get(path: string, params: SimpleDict = {}, headers: SimpleDict = {}) {

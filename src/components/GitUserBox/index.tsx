@@ -17,13 +17,10 @@ const GitUserBox: React.FC<Props> = (props) => {
   const [repos, setRepos] = useState<Dict[]>(null);
 
   const fetchUserRepos = () => {
-    // ApiService.get(user.repos_url)
-    // .then((repos) => {
-    //   setRepos(repos);
-    // });
-
-    const reposTmp = require('./repos_temp.json');
-    setRepos(reposTmp);
+    ApiService.get(user.repos_url)
+    .then((repos) => {
+      setRepos(repos);
+    });
   };
 
   useEffect(() => {

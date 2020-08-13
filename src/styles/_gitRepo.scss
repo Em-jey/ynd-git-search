@@ -1,5 +1,5 @@
 .repo-container {
-  background: #f2f0e9;
+  background: $color-buble-bg;
   color: #000;
   border-radius: 5px;
   min-height: 100px;
@@ -8,7 +8,7 @@
     flex: 1;
 
     .repo-name {
-      color: #040018;
+      color: $color-bg;
       text-decoration: none;
       font-size: 1.1rem;
       font-weight: bold;

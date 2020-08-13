@@ -10,8 +10,6 @@ const GitUsers: React.FC<Props> = () => {
   const users = useSelector((state) => getUsers(state));
   const isPending = useSelector((state) => isUsersFetching(state));
 
-  console.log("users: ", users);
-
   return (
     <div className="row">
       {

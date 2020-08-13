@@ -5,8 +5,11 @@
 	margin: 0;
 }
 
+$color-bg: #040018;
+$color-buble-bg: #f2f0e9;
+
 body, #root {
-	background-color: #040018;
+	background-color: $color-bg;
 	color: #fff;
 	min-height: 100vh;
 

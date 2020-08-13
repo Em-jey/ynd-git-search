@@ -34,14 +34,17 @@ const GitUserBox: React.FC<Props> = (props) => {
 
   return (
     <div className="col-xl-4 mb-3 col-md-6">
-      <div className="d-flex p-2 align-items-center git-user-box" onClick={() => setIsOpen(!isOpen)}>
+      <div
+        className="d-flex p-2 align-items-center git-user-box pointer"
+        onClick={() => setIsOpen(!isOpen)}
+      >
         <img src={user.avatar} className="mr-2 user-avatar" />
         <div className="user-login">{user.login}</div>
         {isOpen ? <ChevronUp /> : <ChevronDown />}
       </div>
       <Collapse in={isOpen}>
         <div className="row">
-          <div className=" col-12 d-flex flex-column align-items-end">
+          <div className=" col-12">
             {!repos ? null : repos.map((repo, i) => <GitRepoBox key={i} data={repo} />)}
           </div>
         </div>
